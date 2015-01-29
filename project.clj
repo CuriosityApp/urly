@@ -1,6 +1,7 @@
 (defproject com.curiosity/urly "2.0.0-alpha6"
-  :description "A tiny Clojure library that parses URIs, URLs and relative values that real world HTML may contain"
+  :description "A tiny Clojure library that parses URIs, URLs and relative values that real world HTML may contain. Fork deployed to clojars"
   :min-lein-version "2.5.0"
+  :url "https://github.com/CuriosityApp/urly"
   :license {:name "Eclipse Public License"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [com.google.guava/guava "18.0"]]
@@ -11,12 +12,13 @@
   :source-paths ["src/clojure"]
   :java-source-paths ["src/java"]
   :javac-options     ["-target" "1.6" "-source" "1.6"]
-  :repositories {"sonatype" {:url "http://oss.sonatype.org/content/repositories/releases"
-                             :snapshots false
-                             :releases {:checksum :fail :update :always}}
-                 "sonatype-snapshots" {:url "http://oss.sonatype.org/content/repositories/snapshots"
-                               :snapshots true
-                               :releases {:checksum :fail :update :always}}}
+  :repositories {;"sonatype" {:url "http://oss.sonatype.org/content/repositories/releases"
+                 ;            :snapshots false
+                 ;            :releases {:checksum :fail :update :always}}
+                 ;"sonatype-snapshots" {:url "http://oss.sonatype.org/content/repositories/snapshots"
+                 ;              :snapshots true
+                 ;              :releases {:checksum :fail :update :always}}
+                 }
   :test-selectors {:default    (fn [v] (not (:time-consuming v)))
                    :focus      :focus
                    :core       :core
